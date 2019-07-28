@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[如何爬取京东商品信息]]></title>
     <url>%2F2019%2F07%2F28%2F%E5%A6%82%E4%BD%95%E7%88%AC%E5%8F%96%E4%BA%AC%E4%B8%9C%E5%95%86%E5%93%81%E4%BF%A1%E6%81%AF%2F</url>
-    <content type="text"><![CDATA[来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学 地址：https://www.bilibili.com/video/av9784617/?p=15 通过 requests.get 请求页面信息，然后直接 r.text 查看即可，不涉及保存到本地。 这是在 IDLE 中的代码 在 Sublime 的全部代码如下： 123456789import requests #导入 requests 模块url = &quot;https://item.jd.com/100000177760.html&quot; #定义 url 链接try: #python 的 try 语句 r = requests.get(url) #请求网页 r.raise_for_status() #好像是检查状态码是否是正确的（200） r.encoding = r.apparent_encoding #不太懂，好像是换语句的 print(r.text[:1000]) #输出前 1000 字符？的数据except: #如果不符合上面的条件 print(&quot;爬取失败&quot;) #输出失败 我们运行一下： 打开终端，输入 cd，然后将文件所在目录拖入到 cd 后面，回车。输入 python3 dj.py 回车，我们发现争取打印出了信息，说明代码正确。]]></content>
+    <content type="text"><![CDATA[来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学 地址：https://www.bilibili.com/video/av9784617/?p=15 通过 requests.get 请求页面信息，然后直接 r.text 查看即可，不涉及保存到本地。 这是在 IDLE 中的代码 在 Sublime 的全部代码如下： 123456789import requests #导入 requests 模块url = &quot;https://item.jd.com/100000177760.html&quot; #定义 url 链接try: #python 的 try 语句 r = requests.get(url) #请求网页 r.raise_for_status() #好像是检查状态码是否是正确的（200） r.encoding = r.apparent_encoding #不太懂，好像是换语句的 print(r.text[:1000]) #输出前 1000 字符？的数据except: #如果不符合上面的条件 print(&quot;爬取失败&quot;) #输出失败 我们运行一下： 打开终端，输入 cd，然后将文件所在目录拖入到 cd 后面，回车。输入 python3 jd.py 回车，我们发现争取打印出了信息，说明代码正确。]]></content>
       <categories>
         <category>编程</category>
       </categories>

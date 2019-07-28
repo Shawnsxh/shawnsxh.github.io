@@ -88,7 +88,7 @@
 <meta property="og:description" content="来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学 地址：https://www.bilibili.com/video/av9784617/?p=15 通过 requests.get 请求页面信息，然后直接 r.text 查看即可，不涉及保存到本地。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/Users/sunxiaohu/Documents/写作/Pic/coding/jd_python.png">
-<meta property="og:updated_time" content="2019-07-28T06:14:15.467Z">
+<meta property="og:updated_time" content="2019-07-28T06:17:27.339Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何爬取京东商品信息">
 <meta name="twitter:description" content="来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学 地址：https://www.bilibili.com/video/av9784617/?p=15 通过 requests.get 请求页面信息，然后直接 r.text 查看即可，不涉及保存到本地。">
@@ -342,7 +342,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-28T14:14:15+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-07-28T14:17:27+08:00">
                 2019-07-28
               </time>
             
@@ -438,7 +438,7 @@
 <p>在 Sublime 的全部代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import requests #导入 requests 模块</span><br><span class="line">url = &quot;https://item.jd.com/100000177760.html&quot; #定义 url 链接</span><br><span class="line">try: #python 的 try 语句</span><br><span class="line">	r = requests.get(url) #请求网页</span><br><span class="line">	r.raise_for_status() #好像是检查状态码是否是正确的（200）</span><br><span class="line">	r.encoding = r.apparent_encoding #不太懂，好像是换语句的</span><br><span class="line">	print(r.text[:1000]) #输出前 1000 字符？的数据</span><br><span class="line">except: #如果不符合上面的条件</span><br><span class="line">	print(&quot;爬取失败&quot;) #输出失败</span><br></pre></td></tr></table></figure>
 <p>我们运行一下：</p>
-<p>打开终端，输入 cd，然后将文件所在目录拖入到 cd 后面，回车。<br>输入 python3 dj.py 回车，我们发现争取打印出了信息，说明代码正确。 </p>
+<p>打开终端，输入 cd，然后将文件所在目录拖入到 cd 后面，回车。<br>输入 python3 jd.py 回车，我们发现争取打印出了信息，说明代码正确。 </p>
 
       
     </div>
