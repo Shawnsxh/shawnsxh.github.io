@@ -79,21 +79,20 @@
 
 
 
-<meta name="description" content="来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学 地址：https://www.bilibili.com/video/av9784617/?p=15 通过 requests.get 请求页面信息，然后直接 r.text 查看即可，不涉及保存到本地。">
+<meta name="description" content="来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学地址：https://www.bilibili.com/video/av9784617/?p=15 通过 requests.get 请求页面信息，然后直接 r.text 查看即可，不涉及保存到本地。">
 <meta name="keywords" content="Python,Requests">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何爬取京东商品信息">
 <meta property="og:url" content="http://yoursite.com/2019/07/28/如何爬取京东商品信息/index.html">
 <meta property="og:site_name" content="孙孝虎的博客">
-<meta property="og:description" content="来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学 地址：https://www.bilibili.com/video/av9784617/?p=15 通过 requests.get 请求页面信息，然后直接 r.text 查看即可，不涉及保存到本地。">
+<meta property="og:description" content="来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学地址：https://www.bilibili.com/video/av9784617/?p=15 通过 requests.get 请求页面信息，然后直接 r.text 查看即可，不涉及保存到本地。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/Users/sunxiaohu/Library/Application%20Support/typora-user-images/image-20190728120058890.png">
-<meta property="og:image" content="http://yoursite.com/Users/sunxiaohu/Library/Application%20Support/typora-user-images/image-20190728131914237.png">
-<meta property="og:updated_time" content="2019-07-28T05:27:59.408Z">
+<meta property="og:image" content="http://yoursite.com/Users/sunxiaohu/Documents/写作/Pic/coding/jd_python.png">
+<meta property="og:updated_time" content="2019-07-28T05:43:27.064Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何爬取京东商品信息">
-<meta name="twitter:description" content="来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学 地址：https://www.bilibili.com/video/av9784617/?p=15 通过 requests.get 请求页面信息，然后直接 r.text 查看即可，不涉及保存到本地。">
-<meta name="twitter:image" content="http://yoursite.com/Users/sunxiaohu/Library/Application%20Support/typora-user-images/image-20190728120058890.png">
+<meta name="twitter:description" content="来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学地址：https://www.bilibili.com/video/av9784617/?p=15 通过 requests.get 请求页面信息，然后直接 r.text 查看即可，不涉及保存到本地。">
+<meta name="twitter:image" content="http://yoursite.com/Users/sunxiaohu/Documents/写作/Pic/coding/jd_python.png">
 
 
 
@@ -343,7 +342,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-28T13:27:59+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-07-28T13:43:27+08:00">
                 2019-07-28
               </time>
             
@@ -393,7 +392,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  296
+                  230
                 </span>
               
 
@@ -430,23 +429,23 @@
       
 
       
-        <p>来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学</p>
-<p>地址：<a href="https://www.bilibili.com/video/av9784617/?p=15" target="_blank" rel="noopener">https://www.bilibili.com/video/av9784617/?p=15</a></p>
+        <p>来源：【Python网络爬虫与信息提取】.MOOC. 北京理工大学<br>地址：<a href="https://www.bilibili.com/video/av9784617/?p=15" target="_blank" rel="noopener">https://www.bilibili.com/video/av9784617/?p=15</a></p>
 <p>通过 requests.get 请求页面信息，然后直接 r.text 查看即可，不涉及保存到本地。</p>
 <a id="more"></a>
 <p>这是在 IDLE 中的代码</p>
-<p><img src="/Users/sunxiaohu/Library/Application Support/typora-user-images/image-20190728120058890.png" alt="image-20190728120058890"></p>
+<p><img src="/Users/sunxiaohu/Documents/写作/Pic/coding/jd_python.png" alt="jd_python"></p>
 <p>在 Sublime 的全部代码如下：</p>
-<blockquote>
-<p>‘</p>
-<p>import requests #导入 requests 模块<br>url = “<a href="https://item.jd.com/100000177760.html&quot;" target="_blank" rel="noopener">https://item.jd.com/100000177760.html&quot;</a> #定义 url 链接<br>try: #python 的 try 语句<br>    r = requests.get(url) #请求网页<br>    r.raise_for_status() #好像是检查状态码是否是正确的（200）<br>    r.encoding = r.apparent_encoding #不太懂，好像是换语句的<br>    print(r.text[:1000]) #输出前 1000 字符？的数据<br>except: #如果不符合上面的条件<br>    print(“爬取失败”) #输出失败</p>
-<p>‘</p>
-</blockquote>
+<p><code>import requests #导入 requests 模块
+url = &quot;https://item.jd.com/100000177760.html&quot; #定义 url 链接
+try: #python 的 try 语句
+    r = requests.get(url) #请求网页
+    r.raise_for_status() #好像是检查状态码是否是正确的（200）
+    r.encoding = r.apparent_encoding #不太懂，好像是换语句的
+    print(r.text[:1000]) #输出前 1000 字符？的数据
+except: #如果不符合上面的条件
+    print(&quot;爬取失败&quot;) #输出失败</code></p>
 <p>我们运行一下：</p>
-<p>打开终端，输入 cd，然后将文件所在目录拖入到 cd 后面，回车。</p>
-<p>之后输入 python3，之所以输入 python3，是因为我刚写的代码是 python3 格式的，电脑也安装了 python3，这是一个小技巧，因为 MacBook 自带 python2 版本，意味着你如果输入 python 就是用 python2 运行，如果想用 python3 运行就直接输入这个。</p>
-<p>我们发现争取打印出了信息，说明代码正确。 </p>
-<p><img src="/Users/sunxiaohu/Library/Application Support/typora-user-images/image-20190728131914237.png" alt="image-20190728131914237"></p>
+<p>打开终端，输入 cd，然后将文件所在目录拖入到 cd 后面，回车。<br>输入 python3 dj.py 回车，我们发现争取打印出了信息，说明代码正确。 </p>
 
       
     </div>
